@@ -4,6 +4,20 @@
 */
 
 function isPalindrome(str) {
+  left=0;
+  right=str.length-1;
+ str= str.toLowerCase().replace(/[^a-z0-9]/g, '')
+
+  
+  while(left<=right){
+    if(str[left]!==str[right]){
+      return false;
+      
+    }
+    left++;
+    right--;
+
+  }
   return true;
 }
 

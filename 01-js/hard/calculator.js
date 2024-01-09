@@ -34,10 +34,14 @@ class Calculator {
   }
 
   divide(num) {
-      if (num === 0) {
-          throw new Error("Cannot divide by zero");
+   
+      if(num===0){
+        throw new Error()
+       
+        
       }
       this.result /= num;
+      
   }
 
   clear() {
